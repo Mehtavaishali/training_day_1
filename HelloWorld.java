@@ -1,8 +1,8 @@
 class HelloWorld{
     public static void main(String[] args) {
         System.out.println("HElloworld");
-        int a = 5;
-        int b=3;
+        int a = 2;
+        int b=1;
         int sum = (int)(a + b);
         System.out.println( sum);
         byte myByte = 1; // Declaration and initialization
@@ -34,5 +34,28 @@ class HelloWorld{
         
         String binaryString = Integer.toBinaryString(number);
         System.out.println(binaryString);
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 1; j <= 3; j++) {
+            System.out.println("i = " + i + ", j = " + j);
+            }
+        }
+        int[] numbers = {1, 2, 3, 4, 5};
+        for (int numb : numbers) {
+            System.out.println(numb);
+        }
+        int k=1;
+        while(k<4)
+           System.out.println("hello"+ k++); 
+        int v = 1; // Initialize the counter
+        do {
+            System.out.println("hello"); // Print "hello"
+            v++; // Increment the counter
+        } while (v <= 3); 
+        for (int x = 1; x <= 3; x++) { // Loop for each row
+            for (int y = 1; y<=x; y++) { // Loop for each column in the current row
+                System.out.print('*'); // Print a star without a newline
+            }
+            System.out.println(); // Move to the next line after printing all columns in the current row
+        }
     }
 }
